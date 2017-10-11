@@ -1,0 +1,417 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>App Base</title>
+	<!--<link rel="shortcut icon" href="favicon.ico">-->
+    
+    <!-- JQUERY MOBILE -->
+	<link rel="stylesheet" href="js/jquery-mobile-1.4.5/jquery.mobile-1.4.5.min.css">
+
+	<style>
+        
+        .ui-mobile-viewport-transitioning * {
+            border-color: #ddd;
+        }
+        
+        .ui-page-theme-a .ui-header h1 a,
+        .ui-mobile-viewport-transitioning a {
+            text-decoration: none;
+            color: #000;
+        }
+        
+        .ui-page-theme-a .ui-btn.ui-btn-active,
+        .ui-page-theme-a .ui-btn.ui-btn-active:hover {
+            background-color: #808080;
+            border-color: #808080;
+            text-shadow: none;
+        }
+        
+		.ui-focus, .ui-btn  {
+			 -moz-box-shadow: none !important;
+			 -webkit-box-shadow: none !important;
+			 box-shadow: none !important;
+			}
+        
+        .nobtnborder.ui-btn {
+            background: none;
+            border: none;
+        }
+        
+        img.scale-with-grid {
+            max-width: 100%;
+            height: auto; 
+        }
+        
+        /* Listview with collapsible list items. */
+	    .ui-listview > li .ui-collapsible-heading {
+	      margin: 0;
+	    }
+	    .ui-collapsible.ui-li-static {
+	      padding: 0;
+	      border: none !important;
+	    }
+	    .ui-collapsible + .ui-collapsible > .ui-collapsible-heading > .ui-btn {
+	      border-top: none !important;
+	    }
+
+	</style>
+    
+</head>
+
+<body>
+
+<!-- Start of home page: #home -->
+<div data-role="page" id="home" class="ui-responsive-panel">
+
+	<div data-role="header" data-position="fixed">
+		<h1><a href="#home">App Base</a></h1>
+        <a href="#panel" class="nobtnborder ui-nodisc-icon ui-alt-icon ui-btn ui-btn-right ui-icon-bars ui-btn-icon-right ui-btn-icon-notext">Menu</a>
+	</div><!-- /header -->
+
+	<div role="main" class="ui-content">
+		<h2>Home</h2>
+		<p><a href="#products" class="ui-btn ui-shadow ui-corner-all" data-transition="slide">Products</a></p>
+		<p><a href="#about" class="ui-btn ui-shadow ui-corner-all ui-btn-b" data-transition="slide">About</a></p>
+
+        
+	</div><!-- /content -->
+
+	<div data-role="footer" data-position="fixed" data-id="mainfooter">
+        <div data-role="navbar">
+            <ul>
+                <li><a href="#home" class="ui-btn-active">Home</a></li>
+                <li><a href="#products" data-transition="slide">Products</a></li>
+                <li><a href="#about" data-transition="slide">About</a></li>
+            </ul>
+        </div>
+	</div><!-- /footer -->
+</div><!-- /page one -->
+
+<!-- Start of products page: #products -->
+<div data-role="page" id="products" class="ui-responsive-panel">
+
+	<div data-role="header" data-position="fixed" data-id="productsheader">
+		<a data-rel="back" class="nobtnborder ui-nodisc-icon ui-alt-icon ui-btn ui-icon-carat-l ui-btn-icon-left ui-btn-icon-notext">Back</a>
+		<h1><a href="#home" data-direction="reverse" data-transition="slide">App Name</a> <a href="#products">Products</a></h1>
+        <a href="#panel" class="nobtnborder ui-nodisc-icon ui-alt-icon ui-btn ui-btn-right ui-icon-bars ui-btn-icon-right ui-btn-icon-notext">Menu</a>
+
+	</div><!-- /header -->
+
+	<div role="main" class="ui-content">
+		<h2>Products</h2>
+
+		<p><a href="#one" class="ui-btn ui-shadow ui-corner-all" data-transition="slide">Go to Product Group One</a></p>
+		<p><a href="#two" class="ui-btn ui-shadow ui-corner-all" data-transition="slide">Go to Product Group Two</a></p>
+		<p><a href="#three" class="ui-btn ui-shadow ui-corner-all" data-transition="slide">Go to Product Group Three</a></p>
+	</div><!-- /content -->
+
+	<div data-role="footer" data-position="fixed" data-id="mainfooter">
+
+        <div data-role="navbar">
+            <ul>
+                <li><a href="#home" data-direction="reverse" data-transition="slide">Home</a></li>
+                <li><a href="#products" class="ui-btn-active">Products</a></li>
+                <li><a href="#about" data-transition="slide">About</a></li>
+            </ul>
+        </div>
+	</div><!-- /footer -->
+</div><!-- /page one -->
+
+<!-- Start of first page: #one -->
+<div data-role="page" id="one" class="ui-responsive-panel">
+
+	<div data-role="header" data-position="fixed" data-id="productsheader">
+		<a data-rel="back" class="nobtnborder ui-nodisc-icon ui-alt-icon ui-btn ui-icon-carat-l ui-btn-icon-left ui-btn-icon-notext">Back</a>
+		<h1><a href="#home" data-direction="reverse" data-transition="slide">App Name</a> <a href="#products" data-direction="reverse" data-transition="slide">Products</a></h1>
+        <div data-role="navbar">
+            <ul>
+                <li><a href="#one" data-transition="slide" class="ui-btn-active">One</a></li>
+                <li><a href="#two" data-transition="slide">Two</a></li>
+                <li><a href="#three" data-transition="slide">Three</a></li>
+            </ul>
+        </div>
+        <a href="#panel" class="nobtnborder ui-nodisc-icon ui-alt-icon ui-btn ui-btn-right ui-icon-bars ui-btn-icon-right ui-btn-icon-notext">Menu</a>
+	</div><!-- /header -->
+
+	<div role="main" class="ui-content">
+		<h2>Product Group One</h2>
+
+		<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam maximus, nunc sed ultricies tempus, purus justo ullamcorper nunc, sit amet tempor erat odio id orci. Nam posuere metus nulla, ac tempus tellus ornare et. Praesent fringilla porta mollis. </p>
+
+        <ul data-role="listview" data-inset="true">
+            <li><a href="#popup-p1a" data-rel="dialog" data-transition="pop">
+                <img src="http://placehold.it/250x250">
+                <h2>Product 1A Title</h2>
+                <p>Product 1A Title Description</p></a>
+            </li>
+            <li><a href="#popup-p1a" data-rel="dialog" data-transition="pop">
+                <img src="http://placehold.it/150x150">
+                <h2>Product 1B Title</h2>
+                <p>Product 1B Title Description</p></a>
+            </li>
+            <li><a href="#popup-p1a" data-rel="dialog" data-transition="pop">
+                <img src="http://placehold.it/150x150">
+                <h2>Product 1B Title</h2>
+                <p>Product 1B Title Description</p></a>
+            </li>
+        </ul>
+		
+	</div><!-- /content -->
+
+	<div data-role="footer" data-position="fixed" data-id="mainfooter">
+        <div data-role="navbar">
+            <ul>
+                <li><a href="#home" data-direction="reverse" data-transition="slide">Home</a></li>
+                <li><a href="#products" class="ui-btn-active" data-direction="reverse" data-transition="slide">Products</a></li>
+                <li><a href="#about" data-transition="slide">About</a></li>
+            </ul>
+        </div>
+	</div><!-- /footer -->
+</div><!-- /page one -->
+
+<!-- Start of second page: #two -->
+<div data-role="page" id="two" class="ui-responsive-panel">
+
+	<div data-role="header" data-position="fixed" data-id="productsheader">
+		<a data-rel="back" class="nobtnborder ui-nodisc-icon ui-alt-icon ui-btn ui-icon-carat-l ui-btn-icon-left ui-btn-icon-notext">Back</a>
+		<h1><a href="#home" data-direction="reverse" data-transition="slide">App Name</a> <a href="#products" data-direction="reverse" data-transition="slide">Products</a></h1>
+        <div data-role="navbar">
+            <ul>
+                <li><a href="#one" data-direction="reverse" data-transition="slide">One</a></li>
+                <li><a href="#two" data-transition="slide" class="ui-btn-active">Two</a></li>
+                <li><a href="#three" data-transition="slide">Three</a></li>
+            </ul>
+        </div>
+        <a href="#panel" class="nobtnborder ui-nodisc-icon ui-alt-icon ui-btn ui-btn-right ui-icon-bars ui-btn-icon-right ui-btn-icon-notext">Menu</a>
+	</div><!-- /header -->
+
+	<div role="main" class="ui-content">
+		<h2>Product Group Two</h2>
+
+		<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam maximus, nunc sed ultricies tempus, purus justo ullamcorper nunc, sit amet tempor erat odio id orci. Nam posuere metus nulla, ac tempus tellus ornare et. Praesent fringilla porta mollis. </p>
+        
+        <ul data-role="listview" data-inset="true">
+            <li><a href="#popup-p1a" data-rel="dialog" data-transition="pop">
+                <img src="http://placehold.it/250x250">
+                <h2>Product 2A Title</h2>
+                <p>Product 2A Title Description</p></a>
+            </li>
+            <li><a href="#popup-p1a" data-rel="dialog" data-transition="pop">
+                <img src="http://placehold.it/150x150">
+                <h2>Product 2B Title</h2>
+                <p>Product 2B Title Description</p></a>
+            </li>
+            <li><a href="#popup-p1a" data-rel="dialog" data-transition="pop">
+                <img src="http://placehold.it/150x150">
+                <h2>Product 2B Title</h2>
+                <p>Product 2B Title Description</p></a>
+            </li>
+        </ul>
+
+	</div><!-- /content -->
+
+	<div data-role="footer" data-position="fixed" data-id="mainfooter">
+        <div data-role="navbar">
+            <ul>
+                <li><a href="#home" data-direction="reverse" data-transition="slide">Home</a></li>
+                <li><a href="#products" class="ui-btn-active" data-direction="reverse" data-transition="slide">Products</a></li>
+                <li><a href="#about" data-transition="slide">About</a></li>
+            </ul>
+        </div>
+	</div><!-- /footer -->
+</div><!-- /page two -->
+
+<!-- Start of second page: #three -->
+<div data-role="page" id="three" class="ui-responsive-panel">
+
+	<div data-role="header" data-position="fixed" data-id="productsheader">
+		<a data-rel="back" class="nobtnborder ui-nodisc-icon ui-alt-icon ui-btn ui-icon-carat-l ui-btn-icon-left ui-btn-icon-notext">Back</a>
+		<h1><a href="#home" data-direction="reverse" data-transition="slide">App Name</a> <a href="#products" data-direction="reverse" data-transition="slide">Products</a></h1>
+        <div data-role="navbar">
+            <ul>
+                <li><a href="#one" data-direction="reverse" data-transition="slide">One</a></li>
+                <li><a href="#two" data-direction="reverse" data-transition="slide">Two</a></li>
+                <li><a href="#three" class="ui-btn-active">Three</a></li>
+            </ul>
+        </div>
+        <a href="#panel" class="nobtnborder ui-nodisc-icon ui-alt-icon ui-btn ui-btn-right ui-icon-bars ui-btn-icon-right ui-btn-icon-notext">Menu</a>
+	</div><!-- /header -->
+
+	<div role="main" class="ui-content">
+		<h2>Product Group Three</h2>
+
+		<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam maximus, nunc sed ultricies tempus, purus justo ullamcorper nunc, sit amet tempor erat odio id orci. Nam posuere metus nulla, ac tempus tellus ornare et. Praesent fringilla porta mollis. </p>
+
+        <ul data-role="listview" data-inset="true">
+            <li><a href="#popup-p1a" data-rel="dialog" data-transition="pop">
+                <img src="http://placehold.it/250x250">
+                <h2>Product 3A Title</h2>
+                <p>Product 3A Title Description</p></a>
+            </li>
+            <li><a href="#popup-p1a" data-rel="dialog" data-transition="pop">
+                <img src="http://placehold.it/150x150">
+                <h2>Product 3B Title</h2>
+                <p>Product 3B Title Description</p></a>
+            </li>
+            <li><a href="#popup-p1a" data-rel="dialog" data-transition="pop">
+                <img src="http://placehold.it/150x150">
+                <h2>Product 3B Title</h2>
+                <p>Product 3B Title Description</p></a>
+            </li>
+        </ul>
+
+	</div><!-- /content -->
+
+	<div data-role="footer" data-position="fixed" data-id="mainfooter">
+        <div data-role="navbar">
+            <ul>
+                <li><a href="#home" data-direction="reverse" data-transition="slide">Home</a></li>
+                <li><a href="#products" class="ui-btn-active" data-direction="reverse" data-transition="slide">Products</a></li>
+                <li><a href="#about" data-transition="slide">About</a></li>
+            </ul>
+        </div>
+	</div><!-- /footer -->
+</div><!-- /page two -->
+
+    
+<!-- Start of about page: #about -->
+<div data-role="page" id="about" class="ui-responsive-panel">
+
+	<div data-role="header" data-position="fixed">
+		<a data-rel="back" class="nobtnborder ui-nodisc-icon ui-alt-icon ui-btn ui-icon-carat-l ui-btn-icon-left ui-btn-icon-notext">Back</a>
+		<h1><!--<a href="#about">About</a> --><a href="#home" data-direction="reverse" data-transition="slide">App Name</a></h1>
+        <a href="#panel" class="nobtnborder ui-nodisc-icon ui-alt-icon ui-btn ui-btn-right ui-icon-bars ui-btn-icon-right ui-btn-icon-notext">Menu</a>
+	</div><!-- /header -->
+
+	<div role="main" class="ui-content">
+		<h2>About</h2>
+		<p>Lorem Ipsum</p>
+		<p><a href="#popup" class="ui-btn ui-shadow ui-corner-all" data-rel="dialog" data-transition="pop">Show example "popup" (dialog) page</a></p>
+	</div><!-- /content -->
+
+	<div data-role="footer" data-position="fixed" data-id="mainfooter">
+        <div data-role="navbar">
+            <ul>
+                <li><a href="#home" data-direction="reverse" data-transition="slide">Home</a></li>
+                <li><a href="#products" data-direction="reverse" data-transition="slide">Products</a></li>
+                <li><a href="#about" class="ui-btn-active">About</a></li>
+            </ul>
+        </div>
+	</div><!-- /footer -->
+</div><!-- /page one -->
+
+<!-- Start of Dialog page: #popup -->
+<div data-role="page" id="popup">
+
+	<div data-role="header">
+		<h1>Dialog</h1>
+	</div><!-- /header -->
+
+	<div role="main" class="ui-content">
+		<h2>Popup</h2>
+		<p>I have an id of "popup" on my page container and only look like a dialog because the link to me had a <code>data-rel="dialog"</code> attribute which gives me this inset look and a <code>data-transition="pop"</code> attribute to change the transition to pop. Without this, I'd be styled as a normal page.</p>
+		<p><a href="#about" data-rel="back" class="ui-btn ui-shadow ui-corner-all ui-btn-inline ui-icon-back ui-btn-icon-left">Back to about page</a></p>
+	</div><!-- /content -->
+
+	<div data-role="footer">
+		<h4>Page Footer</h4>
+	</div><!-- /footer -->
+</div><!-- /page popup -->
+    
+<!-- Start of Dialog page: #popup-p1a -->
+<div data-role="page" id="popup-p1a">
+
+	<div data-role="header">
+		<h1>Product Info</h1>
+	</div><!-- /header -->
+
+	<div role="main" class="ui-content">
+        <h2>Product Title</h2>
+        <img src="http://placehold.it/1200x400" class="scale-with-grid">
+        <p>Product Title Description</p>
+		<p><a href="#products" data-rel="back" class="ui-btn ui-btn-inline ui-icon-carat-l ui-btn-icon-left">Back to Products</a></p>
+	</div><!-- /content -->
+
+	<div data-role="footer">
+		<h4></h4>
+	</div><!-- /footer -->
+</div><!-- /page popup -->
+
+
+    
+<!-- rightpanel  -->
+<div data-role="panel" id="panel" data-position="right" data-display="push" data-theme="b">
+    
+    <ul data-role="listview">
+        <li data-icon="delete"><a href="#" data-rel="close">&nbsp;</a></li>
+        <li><a href="#home">Home</a></li>
+        <!--<li><a href="#products">Products</a></li>
+        <li><div data-role="collapsible" data-collapsed="false" data-inset="false" data-iconpos="right">
+                <h3>Products</h3>
+                <ul data-role="listview">
+                    <li><a href="#one">Product Group One</a></li>
+                    <li><a href="#one">Product Group Two</a></li>
+                    <li><a href="#one">Product Group Three</a></li>
+                </ul>
+            </div></li>-->
+        <li data-role="collapsible" data-collapsed-icon="carat-d" data-expanded-icon="carat-u" data-inset="false" data-iconpos="right">
+            <h3>Products</h3>
+            <ul data-role="listview">
+                <li><a href="#products">Main Products Page</a></li>
+                <li><a href="#one">Product Group One</a></li>
+                <li><a href="#one">Product Group Two</a></li>
+                <li><a href="#one">Product Group Three</a></li>
+            </ul>
+        </li>
+        <li><a href="#about">About</a></li>
+    </ul>
+
+</div><!-- /rightpanel -->
+    
+    
+<!-- JQUERY -->
+<script src="js/jquery.min.js"></script>
+
+<!-- JQUERY MOBILE -->
+<script src="js/jquery-mobile-1.4.5/jquery.mobile-1.4.5.min.js"></script>
+
+
+<script type="text/javascript">
+	$(document).on("pageinit", function() {
+		//alert("pageinit");
+        //console.log("page init");
+    });
+    
+    $( document ).on( "mobileinit", function() {
+		//alert("mobileinit");
+        //console.log("mobile init");
+    });
+    
+    
+	$(document).ready(function() {
+		//alert("documentready");
+        //console.log("doc ready");
+        
+		/* NOT WORKING (Trying to collapse the headermenu on click)
+        $("a").click(function() {
+            console.log("click");
+	        $('.headermenu').collapsible({collapsed: true});
+	    });
+        */
+        
+        //To use one panel outside of all pages
+        $( "body>[data-role='panel']" ).panel().enhanceWithin();
+        
+    });
+    
+    
+    
+</script>
+    
+
+    
+</body>
+</html>

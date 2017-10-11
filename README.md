@@ -1,4 +1,4 @@
 # appbase
 
-A PhoneGap Hello World template
+A PhoneGap + Jquery Mobile Hello World app template
 

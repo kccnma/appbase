@@ -6,12 +6,12 @@
     <feature name="Device">
         <param name="browser-package" value="Device" />
     </feature>
-    <name>helloworld</name>
+    <name>appbase</name>
     <description>
-        Hello World sample application that responds to the deviceready event.
+        a phonegap + jquery mobile hello world app template
     </description>
     <author email="support@phonegap.com" href="http://phonegap.com">
-        PhoneGap Team
+        KCCNMA
     </author>
     <content src="index.html" />
     <access origin="*" />

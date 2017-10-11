@@ -1,7 +1,7 @@
 {
-    "name": "com.phonegap.helloworld",
+    "name": "com.phonegap.appbase",
     "version": "1.0.0",
-    "displayName": "helloworld",
+    "displayName": "appbase",
     "cordova": {
         "platforms": [
             "ios"
